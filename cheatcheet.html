@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My HTML Cheatsheet</title>
+    </head>
+    <body>
+        <div id='title'>
+            <h1>HTML Cheatsheet</h1>
+            <h5>Christina Jordan - Challenge Project</h5>
+            <link href = "cheatsheet.css" rel = "stylesheet">
+        </div>
+        <div id = "extra">
+            <h3>What is HTML?</h3>
+            <p>HTML stands for HyperText Markup Language. It is used to give a website content and structure. This cheatsheet will serve as a source of HTML elements when you need to program in this language.</p>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href = "#text">Headings and Paragraphs</a></li>
+                <li><a href = "#media">Media</a></li>
+                <li><a href = "#structure">Structural Elements</a></li>
+                <li><a href = "#table">Tables</a></li>
+                <li><a href = "#more">Extra Links</a></li>
+            </ul>
+        </div>
+        <div id='text'>
+            <h3>Headings and Paragraphs</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>&lt;h1&gt; ... &lt;/h1&gt;</li>
+                                <li>&lt;h2&gt; ... &lt;/h2&gt;</li>
+                                <li>&lt;h3&gt; ... &lt;/h3&gt;</li>
+                                <li>&lt;h4&gt; ... &lt;/h4&gt;</li>
+                                <li>&lt;h5&gt; ... &lt;/h5&gt;</li>
+                                <li>&lt;h6&gt; ... &lt;/h6&gt;</li>
+                            </ul>
+                        </td>
+                        <td>Headers</td>
+                        <td>To give heirarchy to content titles</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt; ... &lt;/p&gt;</td>
+                        <td>Paragraph</td>
+                        <td>To write out regular text</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;em&gt; ... &lt;/em&gt; <br>or<br> &lt;i&gt; ... &lt;/i&gt;</td>
+                        <td>Emphasis or Italic</td>
+                        <td>Italize text</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;strong&gt; ... &lt;strong&gt; or &lt;b&gt; ... &lt;/b&gt;</td>
+                        <td>Strong or Bold</td>
+                        <td>Make text bold</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>Line Break</td>
+                        <td>Breaks up the text in two parts of an element. <span>Note: Do NOT put a closing tag on a line break element!</span></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt; ... &lt;/span&gt;</td>
+                        <td>Span</td>
+                        <td>Inline text container that can group text for styling purposes</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ol&gt; <br> &lt;li&gt;...&lt;/li&gt; <br> &lt;/ol&gt;</td>
+                        <td>Ordered Lists</td>
+                        <td>For lists that have to be sorted numerically</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ul&gt; <br> &lt;li&gt;...&lt;/li&gt; <br> &lt;/ul&gt;</td>
+                        <td>Unordered Lists</td>
+                        <td>For lists that do not have to be sorted numerically. Usually rendered with circles</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id='media'>
+            <h3>Media</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;img src = "image_name.png"&gt;</td>
+                        <td>Image</td>
+                        <td>To embed images in a page. <br> Attributes: The src attribute is mandatory since it indicates the image URL. <span>Note: Do NOT put a closing tag on a line break element!</span></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;video src = "video_name.mp4" controls &gt; Error Message &lt;/video&gt;</td>
+                        <td>Video</td>
+                        <td>To embed videos in a page. <br> Attributes: The src attribute is mandatory since it indicates the image URL. controls attribute will display video controls in media player. All content between opening and closing tag will be shown in case video does not play</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img src = "image_name.png" alt = "Image not supported" /&gt;</td>
+                        <td>alt Attribute</td>
+                        <td>The alt attribute indicates what the browser will display when the image cannot be uploaded</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;a href = "websitelink.com"&gt; Visit this site!&lt;/a&gt; <br>or<br> &lt;a href = "websitelink.com"&gt; &lt;img src = "image_name.png"&gt;Click this image! &lt;/a&gt;</td>
+                        <td>Anchor Element</td>
+                        <td>Used to create hyperlinks in an HTML document. <br>Attributes: href attribute specifies where the link will take the user (websites, files, other places on same page, etc). All content between opening and closing tags is what the hyper link is applied to</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;a href = "websitelink.com" target = "_blank"&gt; Visit this site in a new tab!&lt;/a&gt;</td>
+                        <td>target Atrribute</td>
+                        <td>The target attribute specifies where the target should be opened. If it equals "_blank", it will be opened in a new tab or window</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;audio src = "audio_name.mp3"&gt;&lt;/audio&gt;</td>
+                        <td>Audio</td>
+                        <td>Implements audio into website</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;embed src = "file.gif"/&gt;</td>
+                        <td>Embed</td>
+                        <td>Implements any type of media into website</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figure&gt; &lt;img src = "image_name.png"&gt; &lt;figcaption&gt;Caption of image here&lt;/figcaption&gt; &lt;/figure&gt;</td>
+                        <td>FigCaption Element</td>
+                        <td>Used to describe media incapsulated within figure element. Usually placed within figure element to group the media and it's description</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;link href = "file.css" rel = "stylesheet" type = "text/css"&gt;</td>
+                        <td>Links Element</td>
+                        <td>Used to link HTML file to external sources link CSS files <br> Attributes: href attribute specifies URL to external source. rel attribute specifies relationship of linked document to current document. type attribute defines type of conent being linked</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id = 'structure'>
+            <h3>Structural Elements</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;!DOCTYPE html&gt;</td>
+                        <td>Document Type Declaration</td>
+                        <td>Important! Tells the browser what type of ducument to expect and the version of HTML being used</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;head&gt; ... &lt;/head&gt;</td>
+                        <td>Head Element</td>
+                        <td>Contains general information about the site that will not be displayed in the on the page <br> ex: links to style sheets or the page name</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;title&gt; ... &lt;/title&gt; </td>
+                        <td>Title Element</td>
+                        <td>Contains text that defines the title of an HTML document found in title bar or tab. Belongs in head element</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Whitespace</td>
+                        <td>The rows between code inputted to make it easier to read; will not be read by browser</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;html&gt; ... &lt;/html&gt;</td>
+                        <td>HTML Element</td>
+                        <td>The root of an HTML document. Should be found after DOCTYPE declaration.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;-- Comments --&gt;</td>
+                        <td>Comments</td>
+                        <td>Used to decribe a part of the code or give extra details on project. Can span one or multiple lines</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;element_tag id = "id Name"&gt; ... &lt;element_tag&gt;</td>
+                        <td>Unique ID Attribute</td>
+                        <td>An ID that is not read by browser and can be called upon by JavaScript and CSS to manipulate, format, and preform specific instructions to only that element</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;element_tag class = "id Name"&gt; ... &lt;element_tag&gt;</td>
+                        <td>Class Attribute</td>
+                        <td>The class attribute is used to specify a class for a specific HTML element. When called by JavaScript and CSS programs to manipulate and format the code</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;body&gt; ... &lt;/body&gt;</td>
+                        <td>Body Element</td>
+                        <td>Represents content of HTML document that will be rendered by browser</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;div&gt; ... &lt;/div&gt;</td>
+                        <td>Div Element</td>
+                        <td>Used as a container that divides an HTML document into sections containing flow content like headings, links, images, etc. Short for "division"</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;section&gt; ... &lt;/section&gt;</td>
+                        <td>Section Element</td>
+                        <td>Used to describe HTML elements that share the same theme</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;article&gt; ... &lt;/article&gt;</td>
+                        <td>Article Element</td>
+                        <td>Used to decribe HTML elements that make sense on their own like blogs and articles. Usually placed within a section element when content follows the same theme but can be independent. Does not have to be placed within a section element</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;aside&gt; ... &lt;/aside&gt;</td>
+                        <td>Aside Element</td>
+                        <td>Used to mark additional information that enhances main content; not necessary information</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figure&gt; &lt;img src = "image_name.png"&gt; &lt;/figure&gt;</td>
+                        <td>Figure</td>
+                        <td>Used to incapsulate media such as an image, diagram, or code snippet</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id = "table">
+            <h3>Tables</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;td&gt; ... &lt;/td&gt;</td>
+                        <td>Table Data</td>
+                        <td>Adds a cell of data to a table. Must be nested within &lt;tr&gt; element</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt; ... &lt;/tr&gt;</td>
+                        <td>Table Row</td>
+                        <td>Adds rows of data to a table before adding data and headings</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;thead&gt; ... &lt;/thead&gt;</td>
+                        <td>Table Head</td>
+                        <td>Defines table headings of table columns within table rows</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th rowspan = "#&lt;65534"&gt; ... &lt;/th&gt; <br> or <br> &lt;td rowspan = "#&lt;65534"&gt; ... &lt;/td&gt;</td>
+                        <td>rowspan Attribute</td>
+                        <td>Indicates number of rows that particular cell should span in the table. Automatically set to 1 and can go up to 65534</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tbody&gt; ... &lt;/tbody&gt;</td>
+                        <td>Table Body</td>
+                        <td>Contains all table data other than the table heading and table footer</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th colspan = "#&lt;1000"&gt; ... &lt;/th&gt; <br> or <br> &lt;td colspan = "#&lt;1000"&gt; ... &lt;/td&gt;</td>
+                        <td>colspan Attribute</td>
+                        <td>Indicates number of columns that particular cell should span in the table. Automatically set to 1 and can go up to 1000</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tfoot&gt; ... &lt;/tfoot&gt;</td>
+                        <td>Table Footer</td>
+                        <td>Uses table rows to give footer content or summarize content at the end of the table</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;table&gt; ... &lt;/table&gt;</td>
+                        <td>Table Element</td>
+                        <td>Tells browser that a table will be rendered. Used to reprensent a two dimensional table made of rows and columns</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th&gt; ... &lt;/th&gt;</td>
+                        <td>Table Heading Element</td>
+                        <td>Adds titles to the rows and columns of a table. Must be nested within &lt;tr&gt; element</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id = 'more'>
+            <h3>Extra Links</h3>
+            <ol>
+                <li><a href = "https://www.codecademy.com/learn/paths/full-stack-engineer-career-path/tracks/fscp-web-development-fundamentals/modules/fecp-learn-html-elements/cheatsheet" target="_blank">Codecademy Cheatsheets ~ HTML & CSS</a></li>
+                <li><a href = "https://dev.w3.org/html5/html-author/charref" target="_blank">W3 Schools ~ HTML Symbols</a></li>
+                <li><a href = "https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank">MDN Web Docs Glossary ~ HTML</a></li>
+            </ol>
+        </div>
+    </body>
+</html>
